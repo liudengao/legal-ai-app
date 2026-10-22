@@ -18,7 +18,7 @@ st.markdown("<p style='text-align: center; color: #666; font-size: 14px;'>基于
 st.divider()
 
 # 这里的 Key 直接写死，方便你本地测试 (记得传 GitHub 前改回 st.secrets["DEEPSEEK_KEY"])
-client = OpenAI(api_key=st.secrets["DEEPSEEK_KEY"]", base_url="https://api.deepseek.com")
+client = OpenAI(api_key=st.secrets["DEEPSEEK_KEY"], base_url="https://api.deepseek.com")
 
 # ================= 1. 数据映射字典 =================
 # 【新增】完整的标签名称字典，用于最后把 T19 翻译成中文
